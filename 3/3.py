@@ -19,13 +19,13 @@ for i in line:
             break
 print(res)
 
-
 cnt = 0
 ans = 0
 map = {}
 for l in line:
     s = set()
     for c in l:
+        # a & b & c could work...??? umm
         if (c not in map and c not in s):
             map[c] = 1
             s.add(c)

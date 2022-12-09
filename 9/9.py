@@ -16,12 +16,6 @@ def adj():
         return True
     else:
         return False
-
-def check(hx, hy, tx, ty):
-    if abs(hx - tx) <= 1 and abs(hy - ty) <= 1:
-        return True
-    else:
-        return False
     
 for line in lines:
     line = line.split(" ")
@@ -48,8 +42,6 @@ for line in lines:
 
                 if H[1] - T[1] > 0: T[1] += 1
                 elif H[1] - T[1] < 0: T[1] -= 1
-        # else:
-        #     print((H[0], H[1]), (T[0], T[1]))
         s.add((T[0], T[1]))
 print(len(s))
 
